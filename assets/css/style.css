@@ -149,6 +149,18 @@ a:hover {
 }
 .header-logo {
     width: 9rem;
+    transform: rotateZ(10deg) scaleX(0.7) scaleY(0.7);
+    transition-property: transform;
+    transition-duration: 2s, 1s;
+    transition-delay: 0s, 0s;
+    transition-timing-function: linear;
+}
+.header-logo:hover{
+    transform: rotateZ(-10deg) scaleX(1) scaleY(1);
+    transition-property: transform;
+    transition-duration: 2s, 1s;
+    transition-delay: 0s, 0s;
+    transition-timing-function: linear;
 }
 .header-baseline {
     color: var(--primary-color);
@@ -1102,4 +1114,14 @@ a:hover {
     color: var(--white-color);
     font-size: .9rem;
     font-style: italic;    
+}
+
+/* Animations */
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
