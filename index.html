@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/custom_L221.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
   </head>
 
   <body>
@@ -517,6 +518,71 @@
       <!-- eof .row -->
     </section>
     <!-- eof .section-circuits -->
+
+    <section class="form_UE_L221">
+      <div class="row">
+        <h2>Demande de devis</h2>
+
+        <form action="" class="quick-reservation-form">
+          <fieldset class="quick-reservation part-one-form">
+            <legend class="quick-reservation-legend">Coordonnées</legend>
+            <input type="text" placeholder="Nom de famille" required />
+            <input type="text" placeholder="Prénom" required />
+            <input type="email" placeholder="E-mail" required />
+            <input type="tel" name="" id="" placeholder="Numéro de téléphone" />
+            <!-- conformité RGPD -->
+            <div class="row-form">
+              <input type="checkbox" id="chbx" name="agree" value="Yes!" />
+              <label for="chbx">
+                <p class="form-small-text">
+                  J'autorise <b>Voyage Tour</b> à stocker mes informations.
+                </p>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="quick-reservation part-two-form">
+            <legend class="quick-reservation-legend">
+              Quelles sont vos envies ?
+            </legend>
+            <!-- Liste déroulante -->
+            <label for="country-select"><p>Destination souhaitée :</p></label>
+            <select name="countries-list" id="countries-select">
+              <option value="france">France</option>
+              <option value="espagne">Espagne</option>
+              <option value="etats-unis">États-Unis</option>
+              <option value="italie">Italie</option>
+              <option value="turquie">Turquie</option>
+              <option value="mexique">Mexique</option>
+              <option value="chine">Chine</option>
+              <option value="allemagne">Allemagne</option>
+              <option value="royaume-uni">Royaume-Uni</option>
+              <option value="grece">Grèce</option>
+              <option value="thailande">Thaïlande</option>
+              <option value="autriche">Autriche</option>
+              <option value="emirats-arabes-unis">Émirats Arabes Unis</option>
+              <option value="arabie-saoudite">Arabie Saoudite</option>
+              <option value="portugal">Portugal</option>
+              <option value="malaisie">Malaisie</option>
+              <option value="hong-kong">Hong Kong</option>
+              <option value="pays-bas">Pays-Bas</option>
+              <option value="russie">Russie</option>
+              <option value="canada">Canada</option>
+            </select>
+            <!-- Date d'aller -->
+            <label for="reservation-date"
+              ><p>Quand souhaitez-vous partir ?</p></label
+            >
+            <input type="date" />
+            <!-- Budget approximatif -->
+            <label for="reservation-budget">
+              <p>Quel est votre budget approximatif ?</p>
+            </label>
+            <input type="number" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- eof .form_UE_L221 -->
 
     <footer id="footer">
       <div class="row">

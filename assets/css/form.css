@@ -1,0 +1,28 @@
+/* Stucture */
+.form_UE_L221{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.quick-reservation-form{
+  display: flex;
+}
+
+.row-form{
+  display: flex;
+  gap: 1rem;
+}
+
+.form-small-text{
+  font-size: 0.7rem;
+}
+
+.quick-reservation{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0.5rem;
+  gap: 1rem;
+}
