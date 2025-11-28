@@ -24,5 +24,18 @@
   flex-direction: column;
   padding: 1rem;
   margin: 0.5rem;
-  gap: 1rem;
+}
+
+.quick-reservation-legend{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.quick-reservation-input{
+  padding: 0.5rem;
+  margin-bottom: 1rem;
 }

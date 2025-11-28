@@ -526,10 +526,31 @@
         <form action="" class="quick-reservation-form">
           <fieldset class="quick-reservation part-one-form">
             <legend class="quick-reservation-legend">Coordonnées</legend>
-            <input type="text" placeholder="Nom de famille" required />
-            <input type="text" placeholder="Prénom" required />
-            <input type="email" placeholder="E-mail" required />
-            <input type="tel" name="" id="" placeholder="Numéro de téléphone" />
+            <input
+              class="quick-reservation-input"
+              type="text"
+              placeholder="Nom de famille"
+              required
+            />
+            <input
+              class="quick-reservation-input"
+              type="text"
+              placeholder="Prénom"
+              required
+            />
+            <input
+              class="quick-reservation-input"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+            <input
+              class="quick-reservation-input"
+              type="tel"
+              name=""
+              id=""
+              placeholder="Numéro de téléphone"
+            />
             <!-- conformité RGPD -->
             <div class="row-form">
               <input type="checkbox" id="chbx" name="agree" value="Yes!" />
@@ -546,7 +567,11 @@
             </legend>
             <!-- Liste déroulante -->
             <label for="country-select"><p>Destination souhaitée :</p></label>
-            <select name="countries-list" id="countries-select">
+            <select
+              class="quick-reservation-input"
+              name="countries-list"
+              id="countries-select"
+            >
               <option value="france">France</option>
               <option value="espagne">Espagne</option>
               <option value="etats-unis">États-Unis</option>
@@ -572,12 +597,18 @@
             <label for="reservation-date"
               ><p>Quand souhaitez-vous partir ?</p></label
             >
-            <input type="date" />
+            <input class="quick-reservation-input" type="date" />
             <!-- Budget approximatif -->
             <label for="reservation-budget">
               <p>Quel est votre budget approximatif ?</p>
             </label>
-            <input type="number" />
+            <input
+              class="quick-reservation-input"
+              type="number"
+              placeholder="500"
+              min="300"
+              max="50000"
+            />
           </fieldset>
         </form>
       </div>
