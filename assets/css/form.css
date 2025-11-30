@@ -26,6 +26,7 @@
   margin: 0.5rem;
 }
 
+
 .quick-reservation-legend{
   background-color: var(--secondary-color);
   color: var(--white-color);
@@ -38,4 +39,36 @@
 .quick-reservation-input{
   padding: 0.5rem;
   margin-bottom: 1rem;
+}
+
+/* Vidéo */
+
+.video-btn{
+  padding: 0.7rem 1.2rem;
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.video-btn:hover{
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+}
+
+.animated-video{
+  width: 25rem;
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.4s;
+}
+
+.animated-video.show{
+  opacity: 1;
+  transform: translateY(0);
 }
