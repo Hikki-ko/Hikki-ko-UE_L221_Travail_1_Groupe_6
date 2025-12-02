@@ -2,7 +2,7 @@
     width: 9rem;
     transform: rotateZ(10deg) scaleX(0.7) scaleY(0.7);
     transition-property: transform;
-    transition-duration: 2s, 1s;
+    transition-duration: .5s, .2s;
     transition-delay: 0s, 0s;
     transition-timing-function: linear;
 }
