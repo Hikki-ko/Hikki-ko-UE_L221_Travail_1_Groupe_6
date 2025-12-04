@@ -1,0 +1,41 @@
+.form_UE_L221{
+  padding: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.giveaway-fieldset{
+  padding: 1rem 2rem 1rem;
+}
+
+.giveaway-input-container {
+  position: relative; 
+  margin-top: 1.5rem;
+}
+
+.giveaway-input {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  width: 15rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+.giveaway-input-label {
+  position: absolute;
+  top: 0;
+  left: .3rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  color: var(--secondary-color);
+}
+
+.giveaway-input:focus + .giveaway-input-label,
+.giveaway-input:not(:placeholder-shown) + .giveaway-input-label {
+  top: -1rem;
+  font-size: .9rem;
+}
+

@@ -1,3 +1,8 @@
+/* Cacher la barre de scroll horizontal */
+body{
+  overflow-x: hidden;
+}
+
 /* Effet de parallax */
 
 .section-search{
@@ -14,6 +19,16 @@
   .parallax {
     background-attachment: scroll;
   }
+}
+
+/* Animation des titres */
+h2{
+  transform: scale(99%);
+  transition: .2s;
+}
+
+h2:hover{
+  transform: scale(100%);
 }
 
 /* Animations liens Bons-Plans */
@@ -45,9 +60,58 @@
   height: 300px;
 } */
 
+/* Animation du formulaire de recherches */
+.search-form{
+  transform: translateY(200%);
+  opacity: 0;
+  animation: slideup 1s ease-in forwards;
+}
 
-/* Animation 3D */
+@keyframes slideup {
+  0%{
+    transform: translateY(200%) scale(0.5);
+  }
+  50%{
+    transform: translateY(100%) scale(1.1);
+    opacity: 50;
+  }
+  100%{
+    transform: translateY(0%) scale(1);
+    opacity: 100;
+  }
+}
+/* Animation du texte de la newsletters */
+.newsletter-form-fieldset{
+  transform: translateX(300%);
+  animation: slidein 4s cubic-bezier(0.28,-1.48, 0.54, 2.21) forwards;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Animation 3D des idées voyages */
 .ideas-item:hover{
 transform: rotateY(-360deg);
 transition: 2s ease-in-out;
 }
+
+/* Animation des top destinations */
+.tops-item:hover{
+  transform: translateX(1rem);
+  border: var(--white-color) 1px solid;
+  transition: .5s;
+}
+
+/* Animation des liens vers les réseaux sociaux */
+.footer-social-icon:hover{
+transform: translateX(1rem) scale(1.1);
+transition: .2s;
+}
+
