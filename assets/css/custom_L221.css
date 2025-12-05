@@ -33,7 +33,7 @@ h2:hover{
 
 /* Animations liens Bons-Plans */
 
-/* .tips-link span {
+ .tips-link span {
   position: relative;    
   display: inline-block; 
   padding-left: 25px;  
@@ -44,21 +44,22 @@ h2:hover{
 .tips-link span:before{
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
+  top: var(--y);
+  left: var(--x);
+  width: 0px;
+  height: 0px;
   background-color: #811810;
   border-radius: 50%;
-  transition: width 0.3s, height 0.3s;
   z-index : -1;
-
+  transition: width 0.5s, height 0.5s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .tips-link span:hover:before{
-  width: 300px;
-  height: 300px;
-} */
+  width: 500px;
+  height: 500px;
+} 
 
 /* Animation du formulaire de recherches */
 .search-form{
@@ -82,7 +83,7 @@ h2:hover{
 }
 /* Animation du texte de la newsletters */
 .newsletter-form-fieldset{
-  transform: translateX(300%);
+  transform: translateX(100%);
   animation: slidein 4s cubic-bezier(0.28,-1.48, 0.54, 2.21) forwards;
 }
 
