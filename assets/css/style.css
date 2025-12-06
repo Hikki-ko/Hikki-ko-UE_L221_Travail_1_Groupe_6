@@ -114,7 +114,7 @@ a:hover {
  
 /* Structure 
 ****************************************/
-.row {
+.row-custom {
     display: flex;
     flex-flow: row wrap;
     max-width: 75rem;

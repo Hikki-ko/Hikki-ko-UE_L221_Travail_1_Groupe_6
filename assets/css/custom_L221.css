@@ -1,3 +1,7 @@
+/* header{
+  display: flex;
+} */
+
 /* Cacher la barre de scroll horizontal */
 body{
   overflow-x: hidden;
