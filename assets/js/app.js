@@ -13,17 +13,23 @@ $(document).ready(function ($) {
     // }); 
 
     $(".btn-show-video").click(function () {
-      $(".form-container").hide();
-      $(".video-container").show();
+      $(".form-container").addClass("down");
+      setTimeout(() => {
+        $(".form-container").hide().removeClass("down");
+        $(".video-container").show().addClass("up");
+      }, 500);
       $(".btn-show-video").hide();
       $(".video-container video")[0].play();
     });
     
     $(".btn-show-form").click(function () {
-      $(".video-container").hide();
-      $(".form-container").show();
-      $(".btn-show-video").show(); 
       $(".video-container video")[0].pause(); 
+      $(".video-container").addClass("down");
+      setTimeout(() => {
+        $(".video-container").hide().removeClass("down");
+        $(".form-container").show().addClass("up");
+        $(".btn-show-video").show(); 
+      }, 500);
     });
     
 });

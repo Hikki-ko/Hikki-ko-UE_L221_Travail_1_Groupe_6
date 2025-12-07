@@ -119,3 +119,22 @@ transition: 2s ease-in-out;
 transform: translateX(1rem) scale(1.1);
 transition: .2s;
 }
+
+/* Animation entre le formulaire et la vidéo */
+.up {
+  animation: upAnim 0.5s ease forwards;
+}
+
+.down {
+  animation: downAnim 0.5s ease forwards;
+}
+
+@keyframes upAnim {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes downAnim {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(30px); }
+}
